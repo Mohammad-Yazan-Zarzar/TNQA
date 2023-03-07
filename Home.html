@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNQA Dashboard</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="Home.css">
+	<script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./Home.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light color sticky-top">
+        <a class="navbar-brand color" href="#">TNQA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon color"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav color">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#pages">Pages</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#tool">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#language">Languages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#life">Life Cycle</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- <div class="container" > -->
+    <div class="Head">
+        <div class="container">
+            <div class="row" >
+                <div class="col-6 ">
+                    <h3 class="breake">This page provides a full explanation of dashboard </h3>
+    
+                </div>
+                <div class="col-5">
+                    <img src="./images/dash-image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <section class="section sss"id='pages'>
+        <div class="container">
+            <div class="row color2">
+                <h2>Overview</h2>
+                <p> Dashboard is a project manegment and data visulization tool that allow us to stay update on the network status of all routers, by display in a beautiful and easy way to use. </p>
+            </div>
+            <div class="row color2 reveal">
+                <h2> The main pages </h2>
+            </div>
+            
+            <dl class="row reveal">
+                <dt class="col-sm-3 reveal">Routers information</dt>
+                <dd class="col-sm-9 reveal">Displays all active routers, their software and their subnet.</dd>
+              
+                <dt class="col-sm-3 reveal">Discarded Packets</dt>
+                <dd class="col-sm-9 reveal">
+                    The amount of data that is lost in the network and is classified by service and region .
+                    <br>
+                    service : BE, AF1, AF2, AF3, AF4, EF, CS6, CS7.
+                    <br>
+                    region : MEN , IPBB.
+                    
+                  <!-- <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p> -->
+                  <!-- <p>Donec id elit non mi porta gravida at eget metus.</p> -->
+                </dd>
+              
+                <dt class="col-sm-3 reveal">Utilization</dt>
+                <dd class="col-sm-9 reveal"> view lists the interfaces that are the most heavily used. The view is a table summary of the interfaces whose utilization exceeds the user-configured thresholds and total count for No.exceeded and max bandwidth and No.disacarded packets . 
+                </dd>
+              
+                <dt class="col-sm-3 reveal">Alarms</dt>
+                <dd class="col-sm-9 reveal">The number of alarms on the router and their classification according to severity.</dd>
+                <dt class="col-sm-3 reveal">ICMP Test</dt>
+                <dd class="col-sm-9 reveal">ICMP is an important aspect of the error reporting process and testing to see how well a network is transmitting data,The ICMP test uses ICMP packets to determine the delay, jitter, and packet loss ratio based on the timestamps in test packets.</dd>
+                <dt class="col-sm-3 reveal">CPU & Memory</dt>
+                <dd class="col-sm-9 reveal">Focuses on displaying the CPU status and Memory of each router.</dd>
+              
+                
+            </dl>
+        </div>
+      
+
+
+    </section> 
+    <section class="section2 sss"id='tool'>
+        <div class="container">
+           
+
+            <div class="row  reveal">
+                <h2 class="col-12 color2"> Analysis Tools </h2>
+                <p class="col-6">These tools are used to analyze the huge data in real time that is fetched from the database   </p>
+                <div class="col-6 col-lg-6"><img src="./images/Analyss tool.jpg"></div>
+            </div>
+            <br>
+            <br>
+            <dl class="row reveal">
+                <div class="reveal row">
+                    <dt class="col-sm-3"><img src="./images/icon-search.png"style="width:40px;height:50px" > Search by Router name or Link</dt>
+                    <dd class="col-sm-9">Knowing the name of the router is enough to get all the information about it</dd>
+                    <br>
+
+                </div>
+                <div class="reveal row">
+                    <dt class="col-sm-3"><img src="./images/icon-date.png"style="width:40px;height:50px" > Filter by Date</dt>
+                    <dd class="col-sm-9">
+                        Fetching data from the database and displaying it according to a specific period specified by the user
+                    </dd>
+                    <br>
+
+                </div>
+                
+                <div class="reveal row">
+                    <dt class="col-sm-3 "><img src="./images/icon-filter.png"style="width:40px;height:50px" > Filter by Service or KPI</dt>
+                    <dd class="col-sm-9">Fetch data where there is a threshold exceeded .</dd>
+                    <br>
+
+                </div>
+                <br>
+                <div class="reveal row align-content-center">
+                    <dt class="col-sm-3"><img src="./images/icon-excel.png"style="width:40px;height:50px" > Export To Excel</dt>
+                    <dd class="col-sm-9">Full flexibility in obtaining the results of previous tools and keeping them as an Excel file.</dd>
+                
+
+                </div>
+                <br>
+                <div class="reveal row">
+                    <dt class="col-sm-3 "><img src="./images/icon-chart.png"style="width:40px;height:50px" > Draw Chart</dt>
+                    <dd class="col-sm-9 ">Drawing the results of the previous tools in addition to drawing the status of a router or link depending on the KPI and the service .</dd>
+                  
+                </div>
+                
+               
+                
+            </dl>
+
+        </div>
+    </section>
+    <section class="section sss"id='language'>
+        <div class="container">
+            <div class="row color2 reveal">
+                <h2>Programming languages</h2>
+                <!-- <p> Dashboard is a project manegment and data visulization tool that allow us to stay update on the network status of all routers, by display in a beautiful and easy way to use. </p> -->
+            </div>
+            <div class="reveal programming ">
+                <div class="card reveal " style="width:14rem;">
+                    <img class="card-img-top" src="./images/logo-python.png" alt="Card image cap">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Card title</h5> -->
+                      <p class="card-text">Python is open source, interpreted, high level language and provides great approach for object-oriented programming. It is one of the best language used by data scientist for various data science projects/application.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+                <div class="card reveal" style="width: 14rem;">
+                    <img class="card-img-top" src="./images/logo-mysql.png" alt="Card image cap">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Card title</h5> -->
+                      <p class="card-text">MySQL is an open source relational database management system (RDBMS) with a client-server model. RDBMS is a software or service used to create and manage databases based on a relational model.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+                <div class="card reveal " style="width: 14rem;">
+                    <img class="card-img-top" src="./images/logo-php.png" alt="Card image cap">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Card title</h5> -->
+                      <p class="card-text">PHP is a programming language that allows web developers to create dynamic content that interacts with databases. PHP is basically used for developing web based software applications.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+                <div class="card reveal " style="width: 14rem;">
+                    <img class="card-img-top" src="./images/logo-front.png" alt="Card image cap">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Card title</h5> -->
+                      <p class="card-text">The front end of a website is everything the user either sees or interacts with when they visit the website. It is responsible for the total look and feel of an online experience.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section> 
+    <section class="section section3 sss"id='life'>
+        <div class="container timeLine">
+            <div class="row">
+                <div class="col-12 col-lg-5 align-content-center justify-content-center">
+                <div class="stage1 reveal fade-left stageColor">
+                    <!-- <h3>NCE</h3> -->
+                    <!-- <p>Get The Raw Data From NCE Server </p> -->
+                    <div class="card card1" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">NCE <img src="./images/icon-nce.png"style="width:40px;height:50px" ></h5>
+                          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                          <p class="card-text">Get The Raw Data From NCE Server</p>
+                          <!-- <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="colitem  offset-5">
+                    
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-12 offset-lg-8">
+                <div class="stage1 reveal fade-right stageColor">
+                    <!-- <h3>Data processing</h3> -->
+                    <!-- <p>Python functions are used to convert raw data into processing information</p> -->
+                    <div class="card card1" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Data processing <img src="./images/icon-dataprocess.png"style="width:40px;height:50px" ></h5>
+                          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                          <p class="card-text">Python functions are used to convert raw data into processing information</p>
+                          <!-- <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                <div class="stage1 reveal fade-left stageColor ">
+                    <div class="card card1" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Save the Data <img src="./images/icon-database.png"style="width:40px;height:50px" ></h5>
+                          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                          <p class="card-text">The processed data, which is small compared to the raw data, is stored in the database, and this is done automatically by Python functions.</p>
+                          <!-- <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-5 col-12 offset-lg-8">
+                <div class="stage1 reveal fade-right stageColor">
+                    <!-- <h3>Data processing</h3> -->
+                    <!-- <p>Python functions are used to convert raw data into processing information</p> -->
+                    <div class="card card1" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Back-End Process <img src="./images/icons-back2.png"style="width:40px;height:50px" ></h5>
+                          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                          <p class="card-text">Preparing the data for visualization is done through sql queries and is run through php codes</p>
+                          <!-- <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                <div class="stage1 reveal fade-left stageColor ">
+                    <div class="card card1" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Front-End <img src="./images/icon-front.png"style="width:40px;height:50px" ></h5>
+                          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                          <p class="card-text">The data is displayed within a template that allows him to access the main pages and use tools that enable him to control the data in the database.</p>
+                          <!-- <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+            <br>
+            
+         
+        </div>
+    </section> 
+    <div class="copy container">
+        <p>Designed by <span>Mhd Yazan Zarzar</span></p>
+    </div>
+    <!-- </div> -->
+</body>
+</html>

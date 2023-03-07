@@ -1,0 +1,240 @@
+body{
+    background-color:#222 ;
+    overflow-x: hidden;
+
+}
+*{
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: 1px;
+    font-size: 20px;
+    /* overflow-x: hidden; */
+}
+.color{
+    /* background-color: #d90429 !important; */
+    background-color: #507dbc!important;
+    /* color: #edf2f4 !important; */
+    color: #04080f !important;
+
+}
+li{
+    /* color: #edf2f4 !important; */
+    color: #d90429 !important;
+    
+}
+a{
+    /* color: #edf2f4 !important; */
+    color: #04080f !important;
+
+}
+.Head{
+    /* background-color:#edf2f4 ; */
+    background-color: #04080f;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: #507dbc; 
+}
+.breake{
+    line-break:keep-all;
+}
+img{
+    width: 90%;
+    height: 200px;
+}
+.section{
+    background-color: #eff6e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+.section2{
+    background-color: #04080f;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color:#dae3e5 ;
+}
+.color2{
+    color: #507dbc ;
+}
+.section2 dt{
+    margin-bottom: 5px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888;
+    }
+.section p {
+    color:#04080f;
+}
+.row{
+    margin-bottom: 5px;
+}
+.stage{
+    background-color: #d90429;
+    width:100%;
+    overflow:visible;
+    height: 200px;
+    border-radius: 4px;
+    margin-top: 10px;
+    position: relative;
+    right: 0px;
+}
+/* .stage::before{ */
+    /* content:"" ; */
+    /* border-left: solid 3px #888; */
+    /* width: 10px; */
+    /* height: 80vh; */
+    /* position: absolute; */
+    /* right: -50px; */
+    /* bottom: 0px; */
+    /* background-color: #2b2d42; */
+/* } */
+.stage1{
+    background-color: #ef233c;
+    width: 100%;
+    overflow-y: visible;
+    height: 200px;
+    border-radius: 4px;
+    margin-top: 10px;
+    z-index: 1;
+    /* position: relative; */
+    /* right: 0px; */
+}
+.colitem{
+    /* border-left: 3px solid blue; */
+    height:70vh ;
+    width: 3px;
+    background-color:transparent;
+    position: absolute;
+    z-index: 0;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+.section3{
+    position: relative;
+    background-color: #04080f;
+    display: flex;
+    align-items: center;
+    /* min-height: 100vh; */
+    padding: 10px;
+    min-height: fit-content;
+}
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+@keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+@keyframes fade-right {
+0% {
+    transform: translateX(100px);
+    opacity: 0;
+}
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+.stageColor{
+    background-color: transparent;
+    text-align: center;
+    padding: 4px 4px;
+    word-break: keep-all;
+    
+}
+.timeLine{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.section2 dt{
+    color:#507dbc;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.section dt{
+    color:#507dbc;
+    
+}
+.section2 dd{
+    margin-top: 8px;
+
+}
+.section3 h5{
+    color:#507dbc;
+
+}
+.section2 dl {
+    margin-top: 10px;
+}
+.card1{
+    width: 100% !important;
+    margin-bottom:5px !important;
+}
+.programming{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 13px;
+}
+.card{
+    margin-top: 5px;
+}
+.listRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card-text{
+    font-size: 15px;
+}
+.card-img-top{
+    max-height: 120px;
+}
+.nav-link.active {
+    background: #00c2cb;
+    color: #42455a;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+}
+.copy{
+    color: #dae3e5;
+}
+.copy span{
+    font-weight: bold;
+}
