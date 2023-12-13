@@ -4,9 +4,10 @@ body{
 
 }
 *{
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: 1px;
+    scrollbar-color: #2222;
+    /* scrollbar-width: 20px; */
     font-size: 20px;
+    
     /* overflow-x: hidden; */
 }
 .color{
@@ -14,6 +15,9 @@ body{
     background-color: #507dbc!important;
     /* color: #edf2f4 !important; */
     color: #04080f !important;
+    background-image: linear-gradient(to right, #52bffc,#2feffd);
+    box-shadow: 0 2px 4px 0 #52bffc, 0 3px 5px 0 #52bffc;
+
 
 }
 li{
@@ -75,12 +79,13 @@ img{
   }
 /* width */
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 2px;
+    min-height: 20px;
     }
     
     /* Track */
     ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
     }
     
     /* Handle */
@@ -226,15 +231,47 @@ img{
 .card-img-top{
     max-height: 120px;
 }
-.nav-link.active {
-    background: #00c2cb;
-    color: #42455a;
+.nav-link:hover{
+    background: #04080f;
+
+    /* color: #42455a; */
+    color:#eff6e0 !important;
     transition: 0.5s ease-out;
     letter-spacing: 2px;
+    border-radius: 5px 5px;
+    padding-left:1px;
+    padding-right:1px;
+}
+.nav-link.active {
+    /* background: #00c2cb; */
+    
+    background: #04080f;
+
+    /* color: #42455a; */
+    color:#eff6e0 !important;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+    border-radius: 5px 5px;
+    padding-left:1px;
+    padding-right:1px;
+
 }
 .copy{
     color: #dae3e5;
 }
 .copy span{
     font-weight: bold;
+}
+.borderRadius{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btnToggler{
+    outline: none !important;
+}
+.logo{
+    font-weight: bold;
+}
+.size{
+    font-size: 25px;
 }

@@ -1,6 +1,6 @@
 let section = document.querySelectorAll("section");
 let menu = document.querySelectorAll("nav div ul li a");
-
+var h3=document.getElementById('h3')
 window.onscroll = () => {
   let section = document.querySelectorAll("section");
   let menu = document.querySelectorAll("nav div ul li a");
@@ -44,3 +44,15 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+onload=()=>{
+  console.log('Yazan')
+  console.log(window.innerWidth)
+  if(window.innerWidth<700){
+    console.log('yes')
+    let h3=document.getElementById('h3')
+    console.log(h3)
+
+    h3.classList.add('size')
+  }
+}
